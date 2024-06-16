@@ -1,21 +1,19 @@
 package org.example;
 
 public class Dev {
-    private int age;
-    private Laptop laptop;
+    private Computer com;
 
-    public Dev(Laptop laptop){
+    public Dev(){
         System.out.println("Dev class constructor.");
-        this.laptop = laptop;
+    }
+
+    public void setCom(Computer com){
+        this.com = com;
     }
 
     public void build(){
         System.out.println("Working on an awesome project");
-        laptop.compile();
+        com.compile();
     }
 
-    public void setAge(int age){
-        this.age = age;
-        System.out.println("Age has been set at " + age);
-    }
 }

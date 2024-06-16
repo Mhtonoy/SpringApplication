@@ -5,12 +5,11 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="dev1" class="org.example.Dev">
-        <property name="age" value="12" />
-        <constructor-arg name="laptop" ref="lap1" />
+    <bean id="dev1" class="org.example.Dev" autowire="byName">
+<!--        <property name="com" ref="com" />-->
     </bean>
 
-
-    <bean id="lap1" class="org.example.Laptop"></bean>
+    <bean id="desk1" class="org.example.Desktop"/>
+    <bean id="com" class="org.example.Laptop"/>
 
 </beans>
