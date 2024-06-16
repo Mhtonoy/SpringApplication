@@ -5,11 +5,11 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="dev1" class="org.example.Dev" autowire="byName">
+    <bean id="dev1" class="org.example.Dev" autowire="byType">
 <!--        <property name="com" ref="com" />-->
     </bean>
 
-    <bean id="desk1" class="org.example.Desktop"/>
+    <bean id="desk1" class="org.example.Desktop" primary="true"/>
     <bean id="com" class="org.example.Laptop"/>
 
 </beans>
